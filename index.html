@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html>
-
 <head>
   <title>Weather App</title>
   <meta charset="UTF-8" />
   <meta name="description" content="weather app" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Page icon Link -->
   <link rel="icon" href="assets/logo.png" />
@@ -14,15 +15,13 @@
 
   <!-- Fontawesome Link -->
   <link rel="stylesheet" href="assets/css/markall.min.css" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <!-- Bootstrap Link -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   <!-- Page Style Link -->
   <link rel="stylesheet" href="assets/css/style.css" />
-
 </head>
 
 <body>
@@ -30,9 +29,10 @@
   <nav style="background-color: #12aa1f!important;" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html">Weather App</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
 
@@ -45,6 +45,7 @@
       </ul>
     </div>
   </nav>
+
   <!------------------------ Start Display Temp ------------------------>
   <section class="display-temp " id="marksearch">
     <div class="bg-color  py-5 ">
@@ -53,10 +54,10 @@
           <input type="text" id="marksearch-bar" class="w-100 mb-5" placeholder="&#xF002; search City..."
             style="font-family:Arial, FontAwesome" />
         </div>
-        <div class="city-temp d-flex">
+        <div style="margin-top: 70px;" class="city-temp d-flex">
 
           <!-- Today's Card -->
-          <div class="temp-card shadow">
+          <div  class="temp-card shadow">
             <div class="day-and-date d-flex justify-content-between">
               <p id="today">Monday</p>
               <p id="today-date">3 May</p>
@@ -127,7 +128,13 @@
   </section>
   <!------------------------ End Display Temp ------------------------>
 
-  <!-- JQuery Link -->
+  <!-- Bootstrap JavaScript and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <!-- JQuery Link -->
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
